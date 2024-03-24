@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <h1>Welcome to the Steganography Tool</h1>
+    <div class="mt-5">
+        <a class="btn btn-primary" href="{% url 'hide_data' %}">Hide Data</a>
+        <a class="btn btn-secondary" href="{% url 'reveal_data' %}">Reveal Data</a>
+    </div>
+{% endblock %}
